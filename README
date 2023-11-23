@@ -1,0 +1,6 @@
+Encontré un error en el código proporcionado por la actividad.
+
+Al comparar el número adivinado con el número secreto nunca va a llegar a una coincidencia, debido a que se utiliza el comparador (===) en vez del (==), el error aquí es que el número adivinado es de tipo string y el número secreto de tipo int.
+
+La primera solución es cambiar todos los comparadores (===) por (==) y (!==) por (!=).
+Y la segunda solución la cuál considero mejor, es cambiar el método readlineSync.question() por readlineSync.questionInt() para limitar el prompt a solo de tipo int.
